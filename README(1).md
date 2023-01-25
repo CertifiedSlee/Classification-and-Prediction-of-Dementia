@@ -1,6 +1,6 @@
 
 #  Classification & Prediction of Dementia
-
+![D1](https://user-images.githubusercontent.com/101859309/214534329-435bcd4b-f4e1-41bc-b8eb-8e84db87f3ce.png)
 When thinking, memory, and reasoning skills are lost to the point where they interfere 
 with day-to-day tasks, this condition is known as dementia. Some dementia patients have 
 emotional instability and personality changes. The intensity of dementia varies from the 
@@ -43,6 +43,8 @@ The specific objectives includes:
 
 • Deployment of the model for use by the public
 
+![D2](https://user-images.githubusercontent.com/101859309/214534552-05971091-3c37-4ff5-98c4-aed8ef81de98.png)
+
 ## Problem Statement
 As the seventh leading cause of mortality and one of the main causes of disability and 
 dependency among older people worldwide, dementia is frequently unrecognized and 
@@ -83,9 +85,7 @@ column.
 column) and imputed the missing values in 'SES' with the mode of the 'Demented' 
 group
 
-
-
-
+![D3](https://user-images.githubusercontent.com/101859309/214534928-0df1c837-13ed-4e97-8911-6304cf811119.png)
 
 From the heat map above it was interpreted that:
 
@@ -117,12 +117,13 @@ performed a train-test split of 80% and 20% respectively
 The following models was trained and validated using scikit-learn accuracy report to select the best performing model:
 
 ## Support Vector Machine
-
 Support Vector Machine (SVM) is a supervised machine learning algorithm, that classifies the data using largemargin classification technique. It is a vector spacebased machine learning method, where, the decision boundary between two classes 
 having the maximum distance from any point in thetraining data, is used to classify 
 the testing data. The SVM classifies the training data to generate the Hyperplane 
 (decision boundaries that classifies the data points), by maximizing the distance 
 between the data and the hyperplane.
+
+![D4](https://user-images.githubusercontent.com/101859309/214535056-2da678d3-d931-4fcb-a864-9b1206053140.png)
 
 ## Logistic Regression
 Logistic regression (LR) is a statistical method similar to linear regression since LR 
@@ -133,11 +134,15 @@ continuous data. To predict group membership, LR uses the log odds ratio rather
 than probabilities and an iterative maximum likelihood method rather than a least 
 squares to fit the final model.
 
+![D5](https://user-images.githubusercontent.com/101859309/214535322-4649454b-2252-4708-a7b1-c57473b284c6.png)
+
 ## Random Forest
 The random forest classifier is a supervised machine learning algorithm, that is 
 trained using the ensemble predictions from a series of decision trees. The decision 
 trees reach the final prediction from the features, that provide the maximum 
 information gainat each node.
+
+![D6](https://user-images.githubusercontent.com/101859309/214535369-45578d7d-9e61-466c-9aeb-81b307f7ee52.png)
 
 ## Extreme Gradient Boosting
 The eXtreme Gradient Boosting (XGB) is a decision tree ensemble technique, that 
@@ -148,6 +153,8 @@ distributed weighted Quantile Sketch algorithm, to effectively find the optimal 
 points amongst weighted datasets. The XGB algorithm is a more robust version of 
 the Random Forest algorithm.
 
+![D7](https://user-images.githubusercontent.com/101859309/214535424-06f0849c-96c8-409f-975b-6e4ca25aa488.png)
+
 ## Model Deployment
 The final model was deployed on streamlit - Streamlit is an open source app framework in 
 Python language. It helps data scientist create web apps for data science and machine 
@@ -156,11 +163,12 @@ learning in a short time. Get the link under Demo.
 ## Results
 **The accuracy report of the models that is tested with the test dataset is shown below:**
 
-
-
+![D8](https://user-images.githubusercontent.com/101859309/214535508-bb6280f9-813e-4080-9769-9d31b2e75c82.png)
 
 **The Random Forest model, performs with the maximum accuracy score of 91%. The 
 Confusion matrix for the Random Forst model is shown below:**
+
+![D9](https://user-images.githubusercontent.com/101859309/214535554-48061a34-c198-43d5-88d6-a2aa86c9c9bd.png)
 
 ## Conclusion
 The Random Forest classification model is used to estimate the dementia classification 
